@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore", "GameStore\GameStore.csproj", "{FFE47365-BDFA-47CF-AC65-0AE1D4F2DBEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{9659A498-237A-4576-80AD-5106CAAC5847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{2C84303C-FCF4-481E-B160-C6D6399FB578}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{FFE47365-BDFA-47CF-AC65-0AE1D4F2DBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFE47365-BDFA-47CF-AC65-0AE1D4F2DBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFE47365-BDFA-47CF-AC65-0AE1D4F2DBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9659A498-237A-4576-80AD-5106CAAC5847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9659A498-237A-4576-80AD-5106CAAC5847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9659A498-237A-4576-80AD-5106CAAC5847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9659A498-237A-4576-80AD-5106CAAC5847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C84303C-FCF4-481E-B160-C6D6399FB578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C84303C-FCF4-481E-B160-C6D6399FB578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C84303C-FCF4-481E-B160-C6D6399FB578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C84303C-FCF4-481E-B160-C6D6399FB578}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
