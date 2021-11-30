@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using DAL.Models;
 using Microsoft.AspNetCore.Identity;
 
@@ -31,6 +32,7 @@ namespace DAL
                 IdentityResult result = await userManager.CreateAsync(admin, password);
                 if (result.Succeeded)
                     await userManager.AddToRoleAsync(admin, "admin");
+                Console.WriteLine("Test");
             }
         }
     }
