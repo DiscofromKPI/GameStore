@@ -32,7 +32,6 @@ namespace DAL
                 IdentityResult result = await userManager.CreateAsync(admin, password);
                 if (result.Succeeded)
                     await userManager.AddToRoleAsync(admin, "admin");
-                Console.WriteLine("Test");
             }
         }
     }
