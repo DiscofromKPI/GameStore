@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {GamesComponent} from "./games/games.component";
+import { GameComponent } from './game/game.component';
 
 
 @NgModule({
@@ -19,14 +20,15 @@ import {GamesComponent} from "./games/games.component";
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    GamesComponent
+    GamesComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: GamesComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])

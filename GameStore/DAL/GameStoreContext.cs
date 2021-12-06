@@ -1,4 +1,5 @@
-﻿using DAL.Models;
+﻿using System.Collections.Generic;
+using DAL.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +24,13 @@ namespace DAL
                 .Property(x => x.Price)
                 .HasColumnType("decimal(18,3)");
             
+            // builder.Entity<Game>()
+            //     .HasData(new Game()
+            //     {
+            //         Name = "Fortnite", Details = "The battle royale game", Price = 0,
+            //         ImageUrl = "../GameStore/Images/fortnite.jpg",
+            //         Comments = new List<Comment>(){ new Comment(){Author = }}
+            //     });
         }
     }
 }

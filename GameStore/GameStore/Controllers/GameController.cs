@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GameStore.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/games")]
     public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;

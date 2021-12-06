@@ -1,10 +1,65 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+﻿<h1>List of games</h1>
+<input type="button" value="Add" class="btn btn-default" (click)="add()" />
+<table *ngIf="tableMode; else create" class="table table-striped">
+  <thead>
 
-</body>
-</html>
+  <tr>
+    <td>Game</td>
+    <td>Image</td>
+    <td>Price</td>
+    <td></td>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let p of games">
+    <ng-template [ngIf]="game?.id != p.id" [ngIfElse]="edit">
+      <td>{{p?.name}}</td>
+      <td>{{p?.imageUrl}}</td>
+      <td>{{p?.price}}</td>
+      <td>
+
+        <button class="btn btn-sm btn-primary" (click)="editGame(p)">Change</button>
+        <button class="btn btn-sm btn-danger" (click)="delete(p)">Delete</button>
+      </td>
+    </ng-template>
+  </tr>
+  </tbody>
+</table>
+
+
+<ng-template #edit>
+  <td>
+    <input type="text" [(ngModel)]="game.name" class="form-control" />
+  </td>
+  <td>
+    <input type="text" [(ngModel)]="game.imageUrl" class="form-control" />
+  </td>
+  <td>
+    <input type="number" [(ngModel)]="game.price" class="form-control" />
+  </td>
+  <td>
+    <input type="button" value="Save" (click)="save()" class="btn btn-sm btn-success" />
+    <input type="button" value="Cancel" (click)="cancel()" class="btn btn-sm btn-warning" />
+  </td>
+</ng-template>
+
+
+<ng-template #create>
+  <div class="form-group">
+    <label>Game</label>
+    <input type="text" [(ngModel)]="game.name" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>Image url will be</label>
+    <input type="text" [(ngModel)]="game.imageUrl" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>Price</label>
+    <input type="number" [(ngModel)]="game.price" class="form-control" />
+  </div>
+  <div>
+    <input type="button" value="Save" (click)="save()" class="btn btn-success" />
+    <input type="button" value="Cancel" (click)="cancel()" class="btn btn-warning" />
+  </div>
+</ng-template>

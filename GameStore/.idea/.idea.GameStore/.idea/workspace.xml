@@ -6,7 +6,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307fe5aa-c9ac-480a-ac6b-f68ee85fff5e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/among.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/battlefield.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/cs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/dota.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/fortnite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/assets/Images/gta.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/GameStoreContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/GameStoreContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/RoleInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/RoleInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/Controllers/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +59,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -97,7 +114,11 @@
       <workItem from="1638122774054" duration="2731000" />
       <workItem from="1638182553899" duration="10077000" />
       <workItem from="1638218547343" duration="1580000" />
-      <workItem from="1638284511950" duration="2006000" />
+      <workItem from="1638284511950" duration="6654000" />
+      <workItem from="1638315534868" duration="1994000" />
+      <workItem from="1638559640544" duration="5745000" />
+      <workItem from="1638706364395" duration="10656000" />
+      <workItem from="1638826816922" duration="398000" />
     </task>
     <servers />
   </component>
@@ -118,5 +139,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GameStore/Controllers/GameController.cs</url>
+          <line>17</line>
+          <properties documentPath="D:\GameStore\GameStore\GameStore\Controllers\GameController.cs" initialLine="17" containingFunctionPresentation="method 'GetAll'">
+            <startOffsets>
+              <option value="491" />
+            </startOffsets>
+            <endOffsets>
+              <option value="492" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
