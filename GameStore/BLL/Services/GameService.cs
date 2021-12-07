@@ -17,6 +17,7 @@ namespace BLL.Services
             return await _context.Games
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
+                .AsSplitQuery().AsNoTracking()
                 .SingleOrDefaultAsync(x => x.Id == id);
         }
 
@@ -31,12 +32,13 @@ namespace BLL.Services
             var model = await _context.Games
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
+                .AsSplitQuery().AsNoTracking()
                 .SingleOrDefaultAsync(x => x.Id == id);
             _context.Games.Remove(model);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateByIdAsync(int id, Game model)
+        public async Task UpdateAsync(Game model)
         {
             _context.Games.Update(model);
             await _context.SaveChangesAsync();
@@ -47,6 +49,7 @@ namespace BLL.Services
             return await _context.Games
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
+                .AsSplitQuery().AsNoTracking()
                 .ToListAsync();
         }
     }

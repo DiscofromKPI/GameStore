@@ -24,13 +24,11 @@ namespace DAL
                 .Property(x => x.Price)
                 .HasColumnType("decimal(18,3)");
             
-            // builder.Entity<Game>()
-            //     .HasData(new Game()
+            // builder.Entity<Genre>()
+            //     .HasData(new List<Genre>()
             //     {
-            //         Name = "Fortnite", Details = "The battle royale game", Price = 0,
-            //         ImageUrl = "../GameStore/Images/fortnite.jpg",
-            //         Comments = new List<Comment>(){ new Comment(){Author = }}
-            //     });
+            //         new Genre(){}
+            //     })
         }
     }
 }

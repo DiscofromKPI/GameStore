@@ -5,7 +5,7 @@ import { Game } from './game';
 @Injectable()
 export class DataService {
 
-  private url = "/api/products";
+  private url = "/api/games";
 
   constructor(private http: HttpClient) {
   }

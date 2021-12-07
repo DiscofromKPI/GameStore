@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {GamesComponent} from "./games/games.component";
 import { GameComponent } from './game/game.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GameComponent } from './game/game.component';
     CounterComponent,
     FetchDataComponent,
     GamesComponent,
-    GameComponent
+    GameComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
