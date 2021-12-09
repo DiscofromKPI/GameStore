@@ -34,6 +34,7 @@ namespace GameStore.Controllers
         [HttpGet("/game")]
         public async Task<ActionResult<Game>> GetGameById(int id)
         {
+            char a = '▩';
             var model = await _gameService.GetByIdAsync(id);
             if (model is null) return BadRequest();
             return Ok(model);
