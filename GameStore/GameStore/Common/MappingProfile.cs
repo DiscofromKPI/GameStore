@@ -9,7 +9,7 @@ namespace GameStore.Common
         public MappingProfile()
         {
             CreateMap<UserRegistrationDto, User>()
-                .ForMember(u => u.Email, opt => opt.MapFrom(x => x.Email));
+                .ForMember(u => u.UserName, opt => opt.MapFrom(x => x.Email));
         }
     }
 }

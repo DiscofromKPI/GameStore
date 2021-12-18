@@ -30,9 +30,13 @@ import { OrderComponent } from './order/order.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: GamesComponent, pathMatch: 'full' },
+      { path: 'home', component: GamesComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      {path:'authentication', loadChildren: () => import('./authentication/authentication.module').then(x => x.AuthenticationModule)},
+      // {path: '404', component: NotFoundComponent},
+      {path: '', redirectTo: '/home', pathMatch: 'full'},
+      {path: '**', redirectTo: '/404', pathMatch: 'full'}
     ])
   ],
   providers: [],

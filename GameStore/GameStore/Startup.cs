@@ -2,17 +2,20 @@ using System.Text;
 using BLL.Interfaces;
 using BLL.Services;
 using DAL;
+using DAL.Models;
 using GameStore.JwtFeatures;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using AutoMapper;
 
 namespace GameStore
 {
@@ -51,6 +54,19 @@ namespace GameStore
             services.AddDbContext<GameStoreContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), 
                     c=>c.MigrationsAssembly("DAL")));
+            services.AddIdentity<User, IdentityRole>(opts =>
+                {
+                    opts.Password.RequiredLength = 5;
+                    opts.Password.RequireNonAlphanumeric = false;
+                    opts.Password.RequireLowercase = false;
+                    opts.Password.RequireUppercase = false;
+                    opts.Password.RequireDigit = true;
+                    opts.User.RequireUniqueEmail = true;
+                    opts.User.AllowedUserNameCharacters =
+                        ".@abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPRSTUVWZYX";
+                })
+                .AddEntityFrameworkStores<GameStoreContext>().AddDefaultTokenProviders();
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IGameService, GameService>();
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory

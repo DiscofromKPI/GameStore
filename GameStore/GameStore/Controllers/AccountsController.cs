@@ -10,15 +10,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.Controllers
 {
-    [Route("api/account")]
+    [Route("api/accounts")]
     [ApiController]
-    public class AccountController : ControllerBase
+    public class AccountsController : ControllerBase
     {
         private readonly UserManager<User> _userManager;
         private readonly IMapper _mapper;
         private readonly JwtHandler _jwtHandler;
         
-        public AccountController(UserManager<User> userManager, IMapper mapper, JwtHandler jwtHandler) 
+        public AccountsController(UserManager<User> userManager, IMapper mapper, JwtHandler jwtHandler) 
         {
             _userManager = userManager;
             _mapper = mapper;
@@ -28,6 +28,7 @@ namespace GameStore.Controllers
         [HttpPost("Registration")] 
         public async Task<IActionResult> RegisterUser([FromBody] UserRegistrationDto userForRegistration) 
         {
+            
             if (userForRegistration == null || !ModelState.IsValid) 
                 return BadRequest(); 
             

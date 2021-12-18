@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {RegistrationResponseDto} from "../../app/_interfaces/response/registrationResponseDto";
 import {UserForRegistrationDto} from "../../app/_interfaces/user/userForRegistrationDto";
 import {HttpClient} from "@angular/common/http";
-import {Environment} from "@angular/compiler-cli/src/ngtsc/typecheck/src/environment";
+import {EnvironmentUrlService } from './environment-url.service';
 
 
 
@@ -11,7 +11,7 @@ import {Environment} from "@angular/compiler-cli/src/ngtsc/typecheck/src/environ
 })
 export class AuthenticationService {
 
-  constructor(private _http:HttpClient, private _envUrl:Environment) { }
+  constructor(private _http:HttpClient, private _envUrl:EnvironmentUrlService) { }
 
   public registerUser = (route:string, body:UserForRegistrationDto) => {
     return this._http.post<RegistrationResponseDto>(this.createCompleteRoute(route, this._envUrl.urlAddress), body)
