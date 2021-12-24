@@ -47,12 +47,15 @@ namespace GameStore.Controllers
         public async Task<IActionResult> Login([FromBody] UserLoginDto userForAuthentication)
         {
             var user = await _userManager.FindByEmailAsync(userForAuthentication.Email);
+            
             if (user == null || !await _userManager.CheckPasswordAsync(user, userForAuthentication.Password))
                 return Unauthorized(new AuthResponseDto { ErrorMessage = "Invalid Authentication" });
+            
             var signingCredentials = _jwtHandler.GetSigningCredentials();
             var claims = _jwtHandler.GetClaims(user);
             var tokenOptions = _jwtHandler.GenerateTokenOptions(signingCredentials, claims);
             var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+            
             return Ok(new AuthResponseDto { IsAuthSuccessful = true, Token = token });
         }
     }
