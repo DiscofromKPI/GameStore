@@ -14,10 +14,10 @@ namespace BLL.Services
 
         public async Task<Game> GetByIdAsync(int id)
         {
-            return await _context.Games
+            return await _context.Games.AsSplitQuery()
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
-                .AsSplitQuery().AsNoTracking()
+                .AsNoTracking()
                 .SingleOrDefaultAsync(x => x.Id == id);
         }
 
@@ -29,10 +29,10 @@ namespace BLL.Services
 
         public async Task DeleteByIdAsync(int id)
         {
-            var model = await _context.Games
+            var model = await _context.Games.AsSplitQuery()
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
-                .AsSplitQuery().AsNoTracking()
+                .AsNoTracking()
                 .SingleOrDefaultAsync(x => x.Id == id);
             _context.Games.Remove(model);
             await _context.SaveChangesAsync();
@@ -46,10 +46,10 @@ namespace BLL.Services
 
         public async Task<IEnumerable<Game>> GetAllAsync()
         {
-            return await _context.Games
+            return await _context.Games.AsSplitQuery()
                 .Include(x => x.Genres)
                 .Include(x => x.Comments).ThenInclude(x => x.Comments)
-                .AsSplitQuery().AsNoTracking()
+                .AsNoTracking()
                 .ToListAsync();
         }
     }

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule,  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {GamesComponent} from "./games/games.component";
 import { GameComponent } from './game/game.component';
 import { OrderComponent } from './order/order.component';
+import {ErrorHandlerService} from "../shared/services/error-handler.service";
 
 
 @NgModule({
@@ -34,12 +35,18 @@ import { OrderComponent } from './order/order.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       {path:'authentication', loadChildren: () => import('./authentication/authentication.module').then(x => x.AuthenticationModule)},
-      // {path: '404', component: NotFoundComponent},
+      //{path: '404', component: NotFoundComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', redirectTo: '/404', pathMatch: 'full'}
     ])
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass:ErrorHandlerService,
+      multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

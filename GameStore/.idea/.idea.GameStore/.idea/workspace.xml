@@ -7,15 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="307fe5aa-c9ac-480a-ac6b-f68ee85fff5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/Services/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/Services/GameService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/shared/services/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/shared/services/authentication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/Common/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/Common/MappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/Controllers/AccountsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/GameStore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/GameStore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ViewModels/User/UserRegistrationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ViewModels/User/UserRegistrationDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/register-user/register-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/register-user/register-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/register-user/register-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/register-user/register-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/nav-menu/nav-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/nav-menu/nav-menu.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,9 @@
       <workItem from="1639131530977" duration="1191000" />
       <workItem from="1639656535886" duration="2382000" />
       <workItem from="1639742258821" duration="10280000" />
-      <workItem from="1639828458525" duration="1864000" />
+      <workItem from="1639828458525" duration="3567000" />
+      <workItem from="1640299747192" duration="23000" />
+      <workItem from="1640302159816" duration="1865000" />
     </task>
     <servers />
   </component>
