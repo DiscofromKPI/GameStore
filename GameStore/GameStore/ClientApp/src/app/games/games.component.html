@@ -15,7 +15,7 @@
   <tr *ngFor="let p of games">
     <ng-template [ngIf]="game?.id != p.id" [ngIfElse]="edit">
       <td>{{p?.name}}</td>
-      <td><img src="{{p?.imageUrl}}" alt="image"/></td>
+      <td><img src="{{p?.imageUrl}}" alt="image" sizes="150px"/></td>
       <td>{{p?.price}}</td>
       <td>
         <button class="btn btn-sm btn-primary" (click)="editGame(p)">Change</button>

@@ -16,7 +16,7 @@ namespace GameStore.JwtFeatures
         public JwtHandler(IConfiguration configuration)
         {
             _configuration = configuration;
-            _jwtSettings = _configuration.GetSection("JwtSettings");
+            _jwtSettings = _configuration.GetSection("JWT");
         }
         public SigningCredentials GetSigningCredentials()
         {
@@ -35,8 +35,8 @@ namespace GameStore.JwtFeatures
         public JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
         {
             var tokenOptions = new JwtSecurityToken(
-                issuer: _jwtSettings.GetSection("validIssuer").Value,
-                audience: _jwtSettings.GetSection("validAudience").Value,
+                issuer: _jwtSettings.GetSection("ValidIssuer").Value,
+                audience: _jwtSettings.GetSection("ValidAudience").Value,
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(Convert.ToDouble(_jwtSettings.GetSection("expiryInMinutes").Value)),
                 signingCredentials: signingCredentials);

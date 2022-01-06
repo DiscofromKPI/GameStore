@@ -6,15 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307fe5aa-c9ac-480a-ac6b-f68ee85fff5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/_interfaces/response/AuthResponseDto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/_interfaces/user/userForAuthenticationDto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/authentication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/authentication.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/counter/counter.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/shared/services/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/shared/services/authentication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStore/Controllers/AccountsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/Controllers/AccountsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/authentication/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/fetch-data/fetch-data.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/fetch-data/fetch-data.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/games/games.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/ClientApp/src/app/nav-menu/nav-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/ClientApp/src/app/nav-menu/nav-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/JwtFeatures/JwtHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/JwtFeatures/JwtHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStore/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameStore/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +43,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce9b239e7dafd811d27c34554a1e62236943314158687cb4cae1746476f942a/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DAL/obj/Debug/net5.0/DAL.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b41958e558efd7597af0cbe75b2f1a77ee2de5c6ff253af2ecf54fbc83a77/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BLL/obj/Debug/netcoreapp3.1/BLL.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/afdb9066c2224c2ca693b338c57624786b5a84c757a9c562c9a61297c6e/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="21TAAtMxs5nw3ELfmyalSUceE7N" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,7 +131,11 @@
       <workItem from="1640299747192" duration="23000" />
       <workItem from="1640302159816" duration="2368000" />
       <workItem from="1640377173047" duration="1227000" />
-      <workItem from="1640380744444" duration="601000" />
+      <workItem from="1640380744444" duration="912000" />
+      <workItem from="1640435017051" duration="1666000" />
+      <workItem from="1640820531626" duration="829000" />
+      <workItem from="1640911823951" duration="53000" />
+      <workItem from="1641495005677" duration="592000" />
     </task>
     <servers />
   </component>
